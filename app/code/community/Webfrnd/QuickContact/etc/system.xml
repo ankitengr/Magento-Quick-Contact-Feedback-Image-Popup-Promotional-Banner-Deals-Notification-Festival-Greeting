@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <webfrnd_extension translate="label" module="quickcontact">
+            <label>Webfrnd Extensions</label>
+            <sort_order>99999</sort_order>
+        </webfrnd_extension>
+    </tabs> 
+	<sections>
+        <webfrnd_quickcontact_options translate="label" module="quickcontact">
+            <label>Quick Contact</label>
+            <tab>webfrnd_extension</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+			
+			<groups>                
+                <general translate="label">
+                    <label>Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>						
+						<module_enable translate="label">
+                            <label>Enable Extension</label>
+							<comment>Select No if dont want to work this extension</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </module_enable>
+						
+						<jquery translate="label">
+                            <label>Enable Self Jquery</label>
+							<comment>Select No if Jquery Confilict</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>51</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </jquery>
+						
+						<display_form translate="label">
+                            <label>Display Form</label>
+							<comment>Select No if Feedback Form Not required.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>52</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </display_form>
+						
+						<logoimage translate="label comment">
+    	                   <label>Background Image</label>
+						   <comment>Select Popup Background Image or Leave Blank for Default</comment>
+        	               <frontend_type>image</frontend_type>
+            	           <backend_model>adminhtml/system_config_backend_image</backend_model>
+                	       <upload_dir config="system/filesystem/media" scope_info="1">admin-config-uploads</upload_dir>
+                    	   <base_url type="media" scope_info="1">admin-config-uploads</base_url>
+	                       <sort_order>53</sort_order>
+    	                   <show_in_default>1</show_in_default>
+        	               <show_in_website>1</show_in_website>
+            	           <show_in_store>1</show_in_store>
+                	   </logoimage>
+					   
+					   <box_width translate="label">
+                            <label>Popup Width</label>
+							<comment>Default is 580</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>54</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                       </box_width>
+
+					   <box_height translate="label">
+                            <label>Popup Height</label>
+							<comment>Default is 350</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                       </box_height>
+					   
+					   <form_top_margin translate="label">
+                            <label>Form Top Margin</label>
+							<comment>Default is 0</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>57</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                       </form_top_margin>
+					   
+					   <form_left_margin translate="label">
+                            <label>Form Left Margin</label>
+							<comment>Default is 0</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>56</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                       </form_left_margin>
+
+					   
+						<autoload_after translate="label">
+                            <label>Auto Load after (in Minutes)</label>
+							<comment>Default is 0 (if 0 is set then will not auto load)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>58</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                       </autoload_after>
+						
+							
+                    </fields>
+                </general>
+				<info translate="label">
+                    <label>About Us</label>
+                    <frontend_type>text</frontend_type>
+					<frontend_model>quickcontact/info</frontend_model>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>                    
+				</info>				
+            </groups>
+			
+			
+        </webfrnd_quickcontact_options>
+    </sections> 
+</config>
